@@ -1,3 +1,5 @@
+// React only work with the thing need to be work one it doesn't thing all the things to be render again and again 
+
 const domContainer = document.querySelector("#root");
 
 const Fruits = () => {
