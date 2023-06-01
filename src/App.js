@@ -1,7 +1,12 @@
-import Clock from "./Components/Clock";
-
+import ClickCounter from "./Components/ClickCounter";
+import HoverCounter from "./Components/HoverCounter";
 function App() {
-  return <div><Clock/></div>
+  return (
+    <div>
+        <ClickCounter />
+        <HoverCounter />
+    </div>
+  );
 }
 
 export default App;
