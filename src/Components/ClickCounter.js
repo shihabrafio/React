@@ -1,6 +1,6 @@
 // import React from "react";
 
-// class -------------------------------------->
+// // class -------------------------------------->
 // class ClickCounter extends React.Component{
 //     state = {
 //         count: 0,
@@ -22,6 +22,9 @@
 
 // export default ClickCounter;
 
+
+
+
 // function ----------------------------->
 // import React, { useState } from "react";
 
@@ -42,12 +45,52 @@
 // export default ClickCounter;
 
 
+
+
+
+
 /////Using HOC
 
-import withCounter from "./HOC/withCounter";
+// import withCounter from "./HOC/withCounter";
 
-const ClickCounter = (props) => {
-  const { count,increment } = props;
+// const ClickCounter = (props) => {
+//   const { count,increment } = props;
+//   return (
+//     <div>
+//       <button type="button" onClick={increment}>
+//         Clicked {count} times
+//       </button>
+//     </div>
+//   );
+// };
+// export default withCounter(ClickCounter);
+
+
+
+
+
+// // RenderProps Class-------------------------------------->
+// import React from "react";
+// class ClickCounter extends React.Component{
+//     render(){
+//         const {count,increment} =this.props;
+//         return(
+//             <div>
+//                 <button type="button" onClick={increment}>Clicked {count} times</button>
+//             </div>
+//         )
+//     }
+// }
+
+// export default ClickCounter;
+
+
+
+
+// RenderProps function-------------------------------------->
+import React from "react";
+
+const ClickCounter = ({ count, increment }) => {
   return (
     <div>
       <button type="button" onClick={increment}>
@@ -56,4 +99,5 @@ const ClickCounter = (props) => {
     </div>
   );
 };
-export default withCounter(ClickCounter);
+
+export default ClickCounter;
